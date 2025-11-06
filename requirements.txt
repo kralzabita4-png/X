@@ -22,7 +22,7 @@ unidecode
 werkzeug
 yt-dlp
 PyYAML~=6.0.3
-pytgcalls
+pytgcalls==3.0.0.dev26
 
 # Pyrogram dev
 https://github.com/KurimuzonAkuma/pyrogram/archive/dev.zip
