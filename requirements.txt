@@ -22,9 +22,7 @@ unidecode
 werkzeug
 yt-dlp
 PyYAML~=6.0.3
-
-# COMMENT: py-tgcalls eski — kaldırıldı
-# py-tgcalls==0.9.7
+pytgcalls
 
 # Pyrogram dev
 https://github.com/KurimuzonAkuma/pyrogram/archive/dev.zip
