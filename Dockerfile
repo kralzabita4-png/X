@@ -1,10 +1,16 @@
-FROM python:3.11
+FROM python:3.11-slim
 
+# Çalışma dizini
 WORKDIR /app
 
-COPY pyproject.toml /app/
+# Bağımlılık dosyası kopyalanır
+COPY requirements.txt /app/
+
+# Bağımlılıklar kurulur
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Tüm proje dosyaları kopyalanır
 COPY . /app/
 
-RUN pip install --no-cache-dir .
-
+# Bot'u başlat
 CMD ["python", "bot.py"]
